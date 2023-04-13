@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+	<link rel="icon" type="imagem/png" href="/imagens/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jogo.js"></script>
+    <title>BEAT SABER</title>
+</head>
+<body onresize="ajustaPalco()">
+
+	<div class="painel">
+		<div class="vidas">
+			<img src="imagens/coracao_cheio.png" id="v1"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<img src="imagens/coracao_cheio.png" id="v2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<img src="imagens/coracao_cheio.png" id="v3">
+		</div>
+		<div class="cronometro">
+			Tempo Restante: <span id="meuCronometro"></span>
+		</div>
+	</div>
+    
+    <script>
+	document.getElementById('meuCronometro').innerHTML=tempo
+	var criarbloco = setInterval(function(){posRandomica()},gerarTempo);
+	</script>
+</body>
+</html>

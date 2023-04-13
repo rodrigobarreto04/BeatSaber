@@ -1,0 +1,12 @@
+body{
+	background-image:url(imagens/game_over.png);
+	background-repeat:no-repeat;
+	background-size: 100%;
+}
+.container{
+	margin-top: 750px;
+	margin-left: 49%;
+	width: 30px;
+	height: 3px;
+	background-color: blueviolet;
+}
